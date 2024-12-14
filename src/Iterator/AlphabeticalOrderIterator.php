@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Tests\Iterator;
+namespace App\Iterator;
 
 use Iterator;
 
