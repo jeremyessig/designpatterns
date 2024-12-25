@@ -18,8 +18,32 @@ class AlphabeticalOrderIterator implements Iterator
         $this->reverse = $reverse;
     }
 
-    public function rewind()
+    public function rewind(): void
     {
+        dump('rewind');
         $this->position = $this->reverse ? count($this->collection->getItems()) - 1 : 0;
+    }
+
+    public function current(): mixed
+    {
+        dump('current');
+        return $this->collection->getItems()[$this->position];
+    }
+
+    public function key(): mixed
+    {
+        dump('key');
+        return $this->position;
+    }
+
+    public function next(): void
+    {
+        dump('next');
+        $this->position = $this->position + ($this->reverse ? -1 : 1);
+    }
+
+    public function valid(): bool
+    {
+        return isset($this->collection->getItems()[$this->position]);
     }
 }
