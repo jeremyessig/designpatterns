@@ -26,8 +26,6 @@ class DecoratorTest extends TestCase
         $clientCode2->doStuff();
 
 
-
-
         //dump($clientCode->doStuff());
     }
 }
