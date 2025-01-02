@@ -3,6 +3,7 @@
 namespace App\Iterator;
 
 use Iterator;
+use App\Iterator\AlphabeticalOrderIterator;
 
 class WordsCollection implements \IteratorAggregate
 {

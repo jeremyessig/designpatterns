@@ -2,11 +2,12 @@
 
 namespace App\Decorator;
 
-use App\Decorator\Component;
+use App\Decorator\ComponentInterface;
+
 
 class ClientCode
 {
-    public function __construct(private Component $component) {}
+    public function __construct(private ComponentInterface $component) {}
 
     public function doStuff()
     {

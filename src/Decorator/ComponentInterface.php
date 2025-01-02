@@ -2,7 +2,8 @@
 
 namespace App\Decorator;
 
-interface Component
+
+interface ComponentInterface
 {
     public function operation(): string;
 }

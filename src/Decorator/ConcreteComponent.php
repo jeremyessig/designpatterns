@@ -2,9 +2,10 @@
 
 namespace App\Decorator;
 
-use App\Decorator\Component;
+use App\Decorator\ComponentInterface;
 
-class ConcreteComponent implements Component
+
+class ConcreteComponent implements ComponentInterface
 {
     public function operation(): string
     {

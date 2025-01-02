@@ -2,16 +2,13 @@
 
 namespace App\Decorator;
 
-use App\Decorator\Component;
+use App\Decorator\ComponentInterface;
 
-class Decorator implements Component
+class Decorator implements ComponentInterface
 {
-    /**
-     * @var Component
-     */
     protected $component;
 
-    public function __construct(Component $component)
+    public function __construct(ComponentInterface $component)
     {
         $this->component = $component;
     }
