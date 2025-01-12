@@ -12,7 +12,7 @@ namespace App\Builder;
  * unrelated products. In other words, results of various builders may not
  * always follow the same interface.
  */
-class Product1
+class Product2
 {
     public $parts = [];
 
